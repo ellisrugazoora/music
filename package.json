@@ -2,7 +2,7 @@
   "name": "ellis-react-app2",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://ellisrugazoora.github.io/the_method",
+  "homepage": "https://ellisrugazoora.github.io/music",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
