@@ -11,11 +11,12 @@ function App() {
   const [number, SetNumber] = useState(parseInt(localStorage.getItem('number')))
   const [arr, SetArray] = useState(0)
   var output = [];
+  /*
   window.addEventListener('keydown', (e) => {
     //SetArray(arr + 1)
     output.push({note: e.key, spacing: 1})
     //console.log(output)
-  });
+  });*/
   useEffect(() => {
     localStorage.setItem('number', number.toString());
   }, [number]);
