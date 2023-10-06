@@ -1,6 +1,6 @@
 function Testcomponent(props){
     return (
-        <div>
+        <div /*hidden={props.visible}*/>
             <p>
                 {props.test} <br></br>
                 {props.location}
