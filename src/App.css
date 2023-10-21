@@ -27,11 +27,9 @@
 .App-link {
   color: #61dafb;
 }
+
 .test_ani {
-  color: #00ff22;
-  position: absolute;
-  left:20%
-  
+  transition: left 1s linear;
 }
 @keyframes App-logo-spin {
   from {

@@ -82,7 +82,7 @@ function App() {
     }, 1000)
     return () => clearInterval(interval)
   },[runningtimer])
-
+  var tester = ((runningtimer * 2)%100) + '%'
   return (
     <div className="App">
       <header className="App-header">
@@ -110,12 +110,12 @@ function App() {
           <Testcomponent test="Test memory through hello world button" location="memory.js" />
           <Assign placeholder="Placeholder fxn input" map="testmap"/>
           
-        </div>
-        <div className='test_ani'>test animation</div>
+        </div> <br></br>
+        <div className='test_ani' style={{position: 'absolute', 'left': tester, color:'red'}} >test animation x: {runningtimer}</div>
         <div onKeyDown={function(){console.log("keydown!")}}>
           Proofs of concepts <br></br>
           {placeholder("button", "User input")}
-          {output}
+          output: {output}
           {placeholder("Visual", "inputdependent visualization")}<br></br>
           {placeholder("input (text or number)", "configure the model")}<br></br>
           {placeholder("input (text or number)", "configure success metric")}<br></br>
